@@ -65,6 +65,18 @@ html
           owl.trigger('prev.owl.carousel', [300]);
       })
 
+      $(document).on('click', '.ladines-main-block__item', function(e) {
+        e.preventDefault();
+
+        $('body').css('overflow', 'hidden');
+        $('.ladines-modal').fadeIn();
+      })
+
+      $('.ladines-modal__close').click(function() {
+        $('.ladines-modal').fadeOut();
+        $('body').css('overflow', 'auto');
+      })
+
       var video = $("video"),
           pauseButton = $(".ladines-inner__video-btn");
           pauseButton.bind('click', function() {
