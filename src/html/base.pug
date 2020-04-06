@@ -37,8 +37,15 @@ html
           a.ladines-footer__link(href="#") Новости
           a.ladines-footer__link(href="#") Кинотеатры
           a.ladines-footer__link(href="#") Контакты
-        form.ladines-footer__search
-          input.ladines-footer__input(type="text", placeholder="Найти")
+        .ladines-footer__social.grid.grid-v-center
+          span Присоединяйтесь
+          .ladines-footer__social-nav
+            a.ladines-footer__social-link(href="#")
+              img(src="img/vk.png")
+            a.ladines-footer__social-link(href="#")
+              img(src="img/fb.png")
+            a.ladines-footer__social-link(href="#")
+              img(src="img/ok.png")
     script(src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js")
     script.
@@ -48,7 +55,7 @@ html
           center: true,
           items: 2,
           loop: true,
-          margin: 10,
+          margin: 23,
           autoWidth: true,
       });
       $('.ladines-main-slide__next').click(function() {
@@ -79,7 +86,7 @@ html
       owl2.owlCarousel({
           items: 4,
           loop: true,
-          margin: 26,
+          margin: 20,
           autoWidth: true
       });
 

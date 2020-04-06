@@ -3,19 +3,13 @@ main.ladines-main.ladines-main--page-news
     section.ladines-main-block.grid.grid-column
       .ladines-news-block__top.grid.grid-v-between
         h2.ladines-main-block__header Новости
-        .ladines-news-block__sort.grid
-          p Показать1
-          .ladines-news-block__sort-container
-            label.ladines-news-block__sort-select(for='select')
-              input.ladines-news-block__sort-input#bg(type='radio' name='list' value='not_changed' checked='')
-              input.ladines-news-block__sort-input#select(type='radio' name='list' value='not_changed')
-              label.bg(for='bg')
-              .items
-                input.ladines-news-block__sort-input(type='radio' name='list' value='first_value' id='list[0]')
-                label(for='list[0]') First option
-                input.ladines-news-block__sort-input(type='radio' name='list' value='second_value' id='list[1]')
-                label(for='list[1]') Second loooooong option
-                span.ladines-news-block__sort-text Select something...1
+        .ladines-news-block__sort.grid.grid-v-center
+          p Показать
+          select.ladines-news-block__sort-select(name='select')
+            option(value='rate') По полуряности
+            option(value='date') По дате
+            option(value='title') По названию
+            option(value='wtf') По щючьему велению заказчика
       .ladines-main-block__container.grid.grid-wrap
         a(href="#").ladines-news-block
           p.ladines-news-block__head
